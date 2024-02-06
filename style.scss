@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: grid;
+  grid-template-areas: "nav", "hero-section", "about", "porducts", "services",
+    "contact", "footer";
+  gap: 20px;
+  font-size: 10px;
+
+  .nav {
+    grid-area: "nav";
+    width: 100%;
+    height: 55px;
+    font-size: 1em;
+  }
+  .hero-section {
+    grid-area: "hero-section";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+
+  .about {
+    grid-area: "about";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+
+  .products {
+    grid-area: "products";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+
+  .services {
+    grid-area: "services";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+
+  .contact {
+    grid-area: "contact";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+
+  footer {
+    grid-area: "footer";
+    width: 100%;
+    height: auto;
+    background: #ffe7e7;
+  }
+}
+
+// tablet
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .main {
+    background: blue;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 961px) {
+  .main {
+    background: green;
+  }
+}
