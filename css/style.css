@@ -6,53 +6,99 @@
 
 .main {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #000;
   display: grid;
   grid-template-areas: "nav", "hero-section", "about", "porducts", "services", "contact", "footer";
   gap: 20px;
-  font-size: 10px;
+  font-size: 16px;
+  padding: 25px 20px 25px 20px;
 }
 .main .nav {
   grid-area: "nav";
   width: 100%;
-  height: 55px;
+  height: 100px;
   font-size: 1em;
+  background: #ff8585;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav .logo {
+  width: 42px;
+  height: 42px;
+  background: #d9d9d9;
+  border-radius: 100%;
+}
+.main .nav .navlinks.show {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0px;
+  margin-left: 0px;
+  transition: margin 1500ms ease-in;
+}
+.main .nav .navlinks {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0px;
+  margin-left: 1000px;
+}
+.main .nav .hamburger-menu {
+  width: 55px;
+  height: 37px;
+  cursor: pointer;
+}
+.main .nav .hamburger-menu span {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #666666;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  border-radius: 5px;
 }
 .main .hero-section {
   grid-area: "hero-section";
+  height: 600px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 .main .about {
   grid-area: "about";
+  height: 1157px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 .main .products {
   grid-area: "products";
+  height: 553px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 .main .services {
   grid-area: "services";
+  height: 681px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 .main .contact {
   grid-area: "contact";
+  height: 1061px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 .main footer {
   grid-area: "footer";
+  height: 308px;
   width: 100%;
-  height: auto;
   background: #ffe7e7;
 }
 
