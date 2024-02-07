@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -40,17 +42,6 @@
       // place-items: center;
     }
 
-    .navlinks.show {
-      width: 100vw;
-      height: 100vh;
-      background-color: antiquewhite;
-
-      position: fixed;
-      top: 0px;
-      margin-left: 0px;
-      transition: margin 1500ms ease-in;
-    }
-
     .navlinks {
       width: 100vw;
       height: 100vh;
@@ -59,6 +50,67 @@
       position: fixed;
       top: 0px;
       margin-left: 1000px;
+      transition: margin-left 500ms cubic-bezier(0.42, 0, 1, 0.45);
+    }
+
+    .navlinks.show {
+      width: 100vw;
+      height: 100vh;
+      background-color: antiquewhite;
+
+      position: fixed;
+      top: 0px;
+      margin-left: 0px;
+      transition: margin-left 1000ms ease-in;
+
+      padding: 30px;
+
+      .cross-button {
+        background: none;
+        border-style: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+        &:hover {
+          color: #ff8585;
+        }
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        li a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 600;
+
+          &:hover {
+            color: #ff8585;
+          }
+        }
+      }
+
+      .signup-btn {
+        border-style: none;
+        background: #ff8585;
+        padding: 12px 32px;
+        border-radius: 5px;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 16px;
+
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
     }
 
     .hamburger-menu {
