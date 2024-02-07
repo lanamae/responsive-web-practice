@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .main .nav .logo {
   width: 42px;
@@ -54,6 +55,7 @@
   padding: 30px;
 }
 .main .nav .navlinks.show .cross-button {
+  display: block;
   background: none;
   border-style: none;
   font-size: 24px;
@@ -95,6 +97,7 @@
 .main .nav .hamburger-menu {
   width: 55px;
   height: 37px;
+  display: block;
   cursor: pointer;
 }
 .main .nav .hamburger-menu span {
@@ -152,5 +155,82 @@
 @media only screen and (min-width: 961px) {
   .main {
     background: green;
+    display: grid;
+    grid-template-areas: "nav", "hero-section", "about", "porducts", "services", "contact", "footer";
+    gap: 20px;
+    font-size: 16px;
+    padding: 25px 20px 25px 20px;
+  }
+  .main .nav {
+    grid-area: "nav";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .nav .navlinks {
+    background: none;
+    width: auto;
+    height: auto;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    margin-left: 0;
+    top: 0;
+    top: 0px;
+  }
+  .main .nav .navlinks .close-menu {
+    display: none;
+  }
+  .main .nav .navlinks ul {
+    display: flex;
+    list-style: none;
+  }
+  .main .nav .navlinks ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000;
+  }
+  .main .nav .navlinks ul li a:hover {
+    color: #fff;
+  }
+  .main .nav .navlinks .signup-btn {
+    border-style: none;
+    background: #fff;
+    padding: 12px 32px;
+    border-radius: 5px;
+  }
+  .main .nav .navlinks .signup-btn a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  .main .nav .navlinks .signup-btn a:hover {
+    font-weight: 700;
+  }
+  .main .nav .navlinks .cross-button i {
+    display: none;
+  }
+  .main .nav .hamburger-menu {
+    display: none;
+  }
+  .main .hero-section {
+    height: 100vh;
+  }
+  .main .about {
+    height: 100vh;
+  }
+  .main .products {
+    height: 100vh;
+  }
+  .main .services {
+    height: 100vh;
+  }
+  .main .contact {
+    height: 100vh;
+  }
+  .main footer {
+    height: 100vh;
   }
 }/*# sourceMappingURL=style.css.map */
