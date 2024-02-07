@@ -52,6 +52,7 @@
       top: 0px;
       margin-left: 1000px;
       transition: margin-left 500ms cubic-bezier(0.42, 0, 1, 0.45);
+      padding: 30px;
 
       .cross-button {
         display: block;
@@ -276,6 +277,8 @@
         ul {
           display: flex;
           list-style: none;
+          flex-direction: row;
+          margin-bottom: 0px;
 
           li a {
             text-decoration: none;
